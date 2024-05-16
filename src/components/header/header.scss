@@ -1,0 +1,38 @@
+header {
+  background-color: bisque;
+  padding: 10px 20px;
+  max-height: 55px;
+
+  .level1__links {
+    display: flex;
+    gap: 20px;
+    position: relative;
+
+    &--item {
+      padding: 5px 10px;
+      &:hover {
+        background-color: beige;
+        .level2__links {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .level2__links {
+    display: none;
+    background-color: beige;
+    position: absolute;
+    padding: 5px 10px;
+    top: 34px;
+    left: 0;
+
+    & li {
+      margin-bottom: 7px;
+    }
+
+    &:hover {
+      display: block;
+    }
+  }
+}
