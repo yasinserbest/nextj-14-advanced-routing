@@ -15,6 +15,9 @@ export const Header = () => {
             <li>
               <Link href="/profile/subscriptions">Subscriptions</Link>
             </li>
+            <li>
+              <Link href="/profile/dashboard">Dashboard</Link>
+            </li>
           </ul>
         </li>
         <li className="level1__links--item">
