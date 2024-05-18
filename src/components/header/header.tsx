@@ -26,6 +26,14 @@ export const Header = () => {
         <li className="level1__links--item">
           <Link href="/images">Images</Link>
         </li>
+        <li className="level1__links--item">
+          <Link href="/literature">Literature</Link>
+          <ul className="level2__links">
+            <li>
+              <Link href="/literature/poems">Poems</Link>
+            </li>
+          </ul>
+        </li>
       </ul>
     </header>
   );

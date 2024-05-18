@@ -10,6 +10,7 @@ header {
 
     &--item {
       padding: 5px 10px;
+      position: relative;
       &:hover {
         background-color: beige;
         .level2__links {
