@@ -3,13 +3,16 @@ export default function ComplexDashboardLayout({
   animals, //slots are available as props so you don't have to import them manually
   furniture,
   plants,
+  login,
 }: {
   children: React.ReactNode;
   animals: React.ReactNode;
   furniture: React.ReactNode;
   plants: React.ReactNode;
+  login: React.ReactNode;
 }) {
-  return (
+  const isLoggedIn = false;
+  return isLoggedIn ? (
     <div>
       <h1>{children}</h1>
       <div style={{ display: 'flex' }}>
@@ -20,5 +23,7 @@ export default function ComplexDashboardLayout({
         <div style={{ display: 'flex', flex: 1 }}>{plants}</div>
       </div>
     </div>
+  ) : (
+    login
   );
 }
